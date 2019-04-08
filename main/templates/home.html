@@ -1,0 +1,12 @@
+<h1>hello World</h1>
+
+{{keyposts}}
+
+{% for post in keyposts %}
+    제목 : {{post.title}}
+    <br>
+    날짜 : {{post.pub_date}}
+    <br>
+    내용 : {{post.body}}
+    <hr>
+    {% endfor %}
